@@ -1,0 +1,9 @@
+{
+    "id" : "AdditionalWorlds",
+    "version" : "0.1.0-SNAPSHOT",
+    "author" : "",
+    "displayName" : "AdditionalWorlds",
+    "description" : "",
+    "dependencies" : [],
+    "serverSideOnly" : false
+}
