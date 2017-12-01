@@ -4,6 +4,10 @@
     "author" : "",
     "displayName" : "AdditionalWorlds",
     "description" : "",
-    "dependencies" : [{"id": "Core", "minVersion": "1.0.0"}],
+    "dependencies" : [
+		{
+			"id" : "Core",
+			"minVersion" : "1.0.0"
+		}],
     "serverSideOnly" : false
 }

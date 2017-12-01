@@ -1,0 +1,19 @@
+/**
+ * This water is visible from all sides, suitable for use in glass boxes
+ */
+{
+    "liquid": true,
+    "water": true,
+    "shape": "engine:TrimmedLoweredCube",
+    "hardness": 0,
+    "attachmentAllowed": false,
+    "translucent": false,
+    "targetable": false,
+    "penetrable": true,
+    "shadowCasting": true,
+    "replacementAllowed": true,
+    "tint": [0.1, 0.2, 0.2],
+    "entity": {
+        "prefab": "AdditionalWorlds:waterSides"
+    }
+}
