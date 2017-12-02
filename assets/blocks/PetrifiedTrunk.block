@@ -1,0 +1,8 @@
+{
+    "basedOn": "core:rock",
+    "displayName": "Petrified Log",
+    "tiles": {
+        "sides": "AdditionalWorlds:PetrifiedBark",
+        "topBottom": "AdditionalWorlds:PetrifiedTrunk"
+    }
+}

@@ -10,12 +10,12 @@ import org.terasology.world.generation.WorldRasterizer;
 import org.terasology.world.generation.facets.SurfaceHeightFacet;
 
 public class TerrainRasterizer implements WorldRasterizer {
-    Block stone, hardStone;
+    Block ash, volcanicRock;
     
     @Override
     public void initialize() {
-        stone = CoreRegistry.get(BlockManager.class).getBlock("Core:Stone");
-        hardStone = CoreRegistry.get(BlockManager.class).getBlock("Core:HardStone");
+        ash = CoreRegistry.get(BlockManager.class).getBlock("AdditionalWorlds:Ash");
+        volcanicRock = CoreRegistry.get(BlockManager.class).getBlock("AdditionalWorlds:VolcanicRock");
     }
 
     @Override
@@ -24,10 +24,10 @@ public class TerrainRasterizer implements WorldRasterizer {
         for(Vector3i position : chunkRegion.getRegion()) {
             float surfaceHeight = surfaceHeightFacet.getWorld(position.x,position.z);
             if(surfaceHeight - position.y > 5) {    //Beneath Surface
-                chunk.setBlock(ChunkMath.calcBlockPos(position),hardStone);
+                chunk.setBlock(ChunkMath.calcBlockPos(position),volcanicRock);
             }
             else if(position.y < surfaceHeight) {   //Surface
-                chunk.setBlock(ChunkMath.calcBlockPos(position),stone);
+                chunk.setBlock(ChunkMath.calcBlockPos(position),ash);
             }
         }
     }
