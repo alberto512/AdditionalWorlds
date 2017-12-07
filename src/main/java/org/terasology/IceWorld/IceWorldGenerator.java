@@ -38,6 +38,8 @@ public class IceWorldGenerator extends BaseFacetedWorldGenerator {
                 .addProvider(new SurfaceProvider())
                 .addProvider(new SeaLevelProvider(0))
                 .addProvider(new MountainsProvider())
+                .addProvider(new FloraProvider())
+                .addRasterizer(new FloraRasterizer())
                 .addRasterizer(new IceWorldRasterizer())
                 .addPlugins();
     }
