@@ -40,7 +40,9 @@ public class IceWorldGenerator extends BaseFacetedWorldGenerator {
                 .addProvider(new MountainsProvider())
                 .addProvider(new FloraProvider())
                 .addProvider(new RiverProvider())
+                .addProvider(new GrassProvider())
                 .addRasterizer(new FloraRasterizer())
+                .addRasterizer(new GrassRasterizer())
                 .addRasterizer(new IceWorldRasterizer())
                 .addPlugins();
     }
