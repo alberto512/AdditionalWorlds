@@ -36,7 +36,7 @@ public class FloraRasterizer implements WorldRasterizer {
     public void generateChunk(CoreChunk chunk, Region chunkRegion) {
         FloraFacet FloraFacet = chunkRegion.getFacet(FloraFacet.class);
 
-        for(Vector3i block : FloraFacet.getWorldRegion())  {
+        for(Vector3i block : FloraFacet.getWorldRegion())if(FloraFacet.getWorld(block))  {
             chunk.setBlock(ChunkMath.calcBlockPos(block.add(0,1,0)),RedFlower);
         }
     }

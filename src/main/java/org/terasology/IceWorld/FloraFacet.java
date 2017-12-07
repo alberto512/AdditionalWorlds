@@ -23,7 +23,7 @@ import org.terasology.world.generation.facets.base.SparseObjectFacet3D;
 /**
  * Stores where plants can be placed
  */
-public class FloraFacet extends SparseObjectFacet3D<FloraType> {
+public class FloraFacet extends BaseBooleanFieldFacet3D {
 
     public FloraFacet(Region3i targetRegion, Border3D border) {
         super(targetRegion, border);

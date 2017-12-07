@@ -44,7 +44,7 @@ public class FloraProvider implements FacetProvider {
 
             if (facet.getWorldRegion().encompasses(position.getX(), surfaceHeight, position.getY())
                     && noise.noise(position.getX(), position.getY()) > 0.85) {
-                facet.setWorld(position.getX(), surfaceHeight, position.getY(), FloraType.FLOWER);
+                facet.setWorld(position.getX(), surfaceHeight, position.getY(), true);
             }
         }
 
